@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mô hình hộp của html</title>
+    <style>
+        body{border: 1px solid red;}
+        h1{border: 1px solid red;}
+        div{border: 1px solid red;}
+        p{border: 1px solid red;}
+        em{border: 1px solid red;}
+        *{padding:3px}
+        p{/*theo kieu contex-box*/
+            background: #c2f670;
+            width: 500px;
+            height: 150px;
+            padding: 20px;
+            border: 2px solid gray;
+            margin: 20px;
+        }
+        p{/*theo kieu border-box*/
+            box-sizing: border-box;
+            width: 500px;
+            height: 150px;
+        }
+        p{/*padding 1em 3em 1em 3em--->padding 1em 3em 1em-->padding 1em 3em*/
+            padding-top: 1em;
+            padding-right: 3em;
+            padding-bottom: 1em;
+            padding-left: 3em;
+            background-color: #D098D4;
+        }
+        p{border-top-style:solid ;border-right-style:dashed ;border-bottom-style:double ;border-left-style:dotted ;
+            width: 300px;
+            height: 100px;
+        }/*border-style: dashed solid double dotted*/
+    </style>
+</head>
+<body>
+    <h1 id="tieu-de">Hi bac Teo!</h1>
+    <div>
+        <p>Mô hình cái hộp là cách thức tổ chức của CSS để <em>hiển thị</em> các phần tử ra giao diện.</p>
+    </div>
+</body>
+</html>
